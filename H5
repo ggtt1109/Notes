@@ -1,0 +1,19 @@
+H5标签
+
+(1)不允许写结束符的标签：area,basebr,col,command,embed,hr,img,input,keygen,link,meta,param,source,track,wbr
+(2)可以省略结束符的标签：li,dt,dd,p,rt,optgroup,option,colgroup,thread,tbody,tr,td,th
+(3).可以完全省略的标签：html,head,body,colgroup,tbody
+
+新增的结构标签：
+(1)section元素
+   表示页面中的一个内容区块，比如章节、页眉、页脚或页面的其他部分。可以和h1···h6等元素结合起来使用，表示文档结构
+(2)article元素
+   表示页面中一块与上下文不相关的独立内容，比如一篇文章
+(3)aside元素
+   表示article元素内容之外的与article元素内容相关的辅助信息
+(4)header元素
+   表示页面中一个内容区块或整个页面的标题
+(5)hgroup元素
+   表示对整个页面或页面中的一个内容区块的标题进行组合
+(6)footer元素
+   表示整个页面或页面中一个内容区块的脚注，一般来说，他会包含创作者的姓名，创作日期以及创作者的联系信息
