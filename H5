@@ -1,5 +1,4 @@
 H5标签
-
 (1)不允许写结束符的标签：area,basebr,col,command,embed,hr,img,input,keygen,link,meta,param,source,track,wbr
 (2)可以省略结束符的标签：li,dt,dd,p,rt,optgroup,option,colgroup,thread,tbody,tr,td,th
 (3).可以完全省略的标签：html,head,body,colgroup,tbody
@@ -17,3 +16,42 @@ H5标签
    表示对整个页面或页面中的一个内容区块的标题进行组合
 (6)footer元素
    表示整个页面或页面中一个内容区块的脚注，一般来说，他会包含创作者的姓名，创作日期以及创作者的联系信息
+   
+meta常见属性
+1.content:定义与http-equiv或name属性相关的元信息，必备属性
+2.http-equiv:把content属性关联到http头部,
+常见属性值：
+   (1)content-type(显示字符集的设定)：浏览器接受的文档类型，一般都是text/html
+   <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+   (2)expires(期限）:用于设定网页的到期时间，一旦网页过期，必须到服务器上重新传输，注意：必须使用GMT的时间格式。
+   <meta http-equiv="expires" content="31 Dec 2015"/>
+   (3)refresh（刷新）：网页刷新，以秒为单位
+   <meta http-equiv="refresh" content="2"/>  //2秒刷新一次
+   (4)Pragma(cache模式):禁止浏览器从本地计算机的缓存中访问页面内容。 
+   <meta http-equiv="Pragma" content="no-cache"> 
+   注意：这样设定，访问者将无法脱机浏览。 
+   (5)Set-Cookie(cookie设定):如果网页过期，那么存盘的cookie将被删除。 
+   <meta http-equiv="Set-Cookie" content="cookievalue=xxx;expires=Friday,12-Jan-2001 18:18:18 GMT；path=/"> 
+   注意：必须使用GMT的时间格式。 
+   (6)Window-target(显示窗口的设定):强制页面在当前窗口以独立页面显示。 
+   <meta http-equiv="Window-target" content= "_top">
+   注意：用来防止别人在框架里调用自己的页面.
+3.name:把content属性关联到一个名称，<meta name="author" content="w3school.com.cn">
+常见属性值：
+   (1)keywords(关键字) 常称,某些搜索引擎在遇到这些关键字时，会用这些关键字对文档进行分类
+   <meta name="keywords" content="HTML,ASP,PHP,SQL">
+   (2)description(网站内容描述):告诉搜索引擎你的网站主要内容。
+   <meta name="description" content= "This page is about the meaning of science, education,culture.">
+   (3)generator():告诉搜索引擎你的站点的制作的作者
+   (4)Robots(机器人向导):很少用，与浏览器检索的相关设置，告诉搜索机器人哪些页面需要索引，哪些页面不需要索引
+   <meta name="robots" content="none">
+   常见属性：
+         （a)all:文件将被搜索，且页面上的链接可以被查询,默认
+          (b)none:文件将不被搜索，页面上的链接不可以被查询
+          (c)index:文件将被搜索
+          (d)follow:页面上的链接可以被查询
+          (e)noindex:文件将不被搜索，但页面上的链接可以被查询
+          (f)nofollow:文件将不被搜索，页面上的链接不可以被查询
+   (5)author(作者):标注网页的作者 
+   <meta name= "author " content= "小笼包,web@webjx.com ">
+
